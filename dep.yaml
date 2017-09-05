@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1 # for versions before 1.6.0 use extensions/v1beta1
+kind: Deployment
+metadata:
+  name: motdservice-dep
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: motdservice
+    spec:
+      containers:
+      - name: motdservice
+        image: adamgilmore/motdservice:1.0
+        ports:
+        - containerPort: 8091
