@@ -13,7 +13,7 @@ import (
 	"context"
 )
 
-var messages = [...]string{"What you want fat boy?", "Howdy Doody!!!"}
+var messages = [...]string{"What you want fat boy?", "Howdy Doody!!!", "Good day, sir"}
 
 func main() {
 	svc := service{}
